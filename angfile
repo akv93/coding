@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>karnik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <style>
+        body {
+            background-image: url("THJVN_DOLLAR.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            Background-size: cover;
+        }
+        p {
+           color: white;
+            font-weight: bold;
+        }
+        div.ang {
+            border: 10px solid white;
+            border-radius: 7px;
+            padding: 5%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="container">
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Cur-Con</a>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+
+</nav>
+<div class="ang" ng-app="myapp" ng-controller="convert">
+    <p> This app is used to convert INR to USD and vice-versa</p>
+    <form name="myform" >
+        <p>INR: </p><input type="text" id="inr" ng-model="i">
+        <p> The USD amount is: <span ng-bind="i / 67.07 | currency"></span></p>
+        <p>USD: </p><input type="text" id="usd" ng-model="u">
+        <p> The INR amount is : <span ng-bind="u * 67.07 | currency : 'Rs.'"></span></p>
+    </form>
+    <script>
+        var a = angular.module("myapp", []);
+        a.controller("convert", function($scope) {
+            $scope.i = 0;
+            $scope.u = 0;
+        });
+    </script>
+</div>
+</body>
+</html>
