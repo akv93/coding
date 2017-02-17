@@ -43,9 +43,15 @@
 <div class="ang" ng-app="myapp" ng-controller="convert">
     <p> This app is used to convert INR to USD and vice-versa</p>
     <form name="myform" >
-        <p>INR: </p><input type="text" id="inr" ng-model="i">
+        <p>INR: </p>
+        <div class="form-group">
+        <input class="from-control" type="text" id="inr" ng-model="i">
+        </div>
         <p> The USD amount is: <span ng-bind="i / 67.07 | currency"></span></p>
-        <p>USD: </p><input type="text" id="usd" ng-model="u">
+        <p>USD: </p>
+        <div class="form-group">
+        <input class="form-control" type="text" id="usd" ng-model="u">
+        </div>
         <p> The INR amount is : <span ng-bind="u * 67.07 | currency : 'Rs.'"></span></p>
     </form>
     <script>
