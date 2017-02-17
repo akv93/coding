@@ -71,7 +71,7 @@ var convert = function() {
     <p>Just click on the button below and get to know the your Amount!!!</p>
     <button class="btn btn-default" onclick="convert()"> Click </button>
 </div>
-<iframe class="converter" width="1140" height="500"></iframe>
+<iframe class="converter" width="1140" height="500" style="border: none"></iframe>
 <script>
 var convert = function() {
     document.getElementsByClassName("converter")[0].src = "newjq.html";
