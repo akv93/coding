@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cur-Con</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<style>
+    body {
+        background: url("THJVN_DOLLAR.jpg") center no-repeat fixed;
+        background-size: cover;
+    }
+</style>
+<body class="container">
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Cur-con</a>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+<div class="well">
+    <p>Hello!</p>
+    <p> Welcome to Cur-Con. Here you can convert INR to USD and USD to INR. </p>
+    <p>Just click on the button below and get to know the your Amount!!!</p>
+    <button class="btn btn-default" onclick="convert()"> Click </button>
+</div>
+<iframe class="converter" width="1140" height="500"></iframe>
+<script>
+var convert = function() {
+    document.getElementsByClassName("converter")[0].src = "newjq.html";
+}
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cur-Con</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<style>
+    body {
+        background: url("THJVN_DOLLAR.jpg") center no-repeat fixed;
+        background-size: cover;
+    }
+</style>
+<body class="container">
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Cur-con</a>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+<div class="well">
+    <p>Hello!</p>
+    <p> Welcome to Cur-Con. Here you can convert INR to USD and USD to INR. </p>
+    <p>Just click on the button below and get to know the your Amount!!!</p>
+    <button class="btn btn-default" onclick="convert()"> Click </button>
+</div>
+<iframe class="converter" width="1140" height="500"></iframe>
+<script>
+var convert = function() {
+    document.getElementsByClassName("converter")[0].src = "newjq.html";
+}
+</script>
+</body>
+</html>
